@@ -464,3 +464,133 @@ ul li a {
 .footer-social img:hover {
   transform: scale(1.1);
 }
+@media (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  /* Navbar */
+  .navbar ul li:not(:last-child) {
+    display: none;
+  }
+  .navbar ul li:last-child a {
+    display: flex;
+    align-items: center;
+  }
+  .navbar ul li:last-child i {
+    margin-right: 5px;
+  }
+
+  /* Banner */
+  .banner {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .banner-title {
+    max-width: 100%;
+    text-align: left;
+  }
+  .banner-head {
+    font-size: 2rem;
+  }
+  .banner-description {
+    font-size: 1rem;
+  }
+  .banner-img {
+    width: 100%;
+  }
+
+  /* Plant Grid */
+  .plant-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Info Section */
+  .info-section {
+    flex-direction: column;
+    height: auto;
+    margin: 60px auto;
+  }
+  .info-image {
+    width: 100%;
+    height: auto;
+  }
+  .info-image .sticker {
+    display: none;
+  }
+  .info-text {
+    width: 100%;
+  }
+  .info-text h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  /* Offer Section */
+  .grid-offer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .cards-1 {
+    width: 100%;
+    height: 200px;
+  }
+  #right-large .overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Subscribe Section */
+  .subscribe-section {
+    height: auto;
+    padding: 30px 0;
+  }
+  .subscribe-content {
+    width: 95%;
+    gap: 20px;
+  }
+  .subscribe-content h2 {
+    font-size: 1.8rem;
+  }
+  .subscribe-form {
+    flex-direction: row;
+    width: 100%;
+  }
+  .subscribe-form input[type="email"] {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+  .subscribe-form button {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  /* Footer */
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+  .footer-left {
+    margin-bottom: 20px;
+  }
+  .footer-description {
+    margin-bottom: 20px;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .footer-links .link-column {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-social {
+    justify-content: flex-start;
+  }
+}
