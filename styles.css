@@ -172,7 +172,7 @@ ul li a {
   align-items: center;
   justify-content: space-between;
   gap: 50px;
-  margin: 180px auto;
+  margin: 150px auto;
 }
 
 /* Image Block */
@@ -198,6 +198,7 @@ ul li a {
   height: auto;
   z-index: 2;
   background: transparent;
+   filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.6));
 }
 
 /* Text Block */
@@ -387,4 +388,79 @@ ul li a {
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-weight: bold;
+}
+.footer {
+  padding: 60px 30px;
+}
+.custom-footer-container {
+  width: 1000px; /* অথবা 1100px, যতটা কমাতে চাও */
+  margin: 0 auto;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Left Side */
+.footer-left {
+  flex-basis: 30%;
+}
+
+.footer-logo {
+  width: 135px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Middle - Links */
+.footer-links {
+  flex-basis: 40%;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.link-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.link-column a {
+  text-decoration: none;
+  color: #00000080;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.link-column a:hover {
+  color: #E95A08;
+}
+
+/* Right Side - Social Logos */
+.footer-social {
+  flex-basis: 20%;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+  transform: scale(1.1);
 }
